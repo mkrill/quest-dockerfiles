@@ -1,6 +1,4 @@
-FROM mariadb:latest
+FROM mariadb:10.5.3-bionic
 MAINTAINER 'Michael Krill' michael.krill@telekom.de
  
-RUN apt-get -y update
-RUN apt-get -y upgrade
-RUN apt-get install -y build-essential
+RUN echo "Greetings from Michael :-)!"
